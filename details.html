@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction - Telecom Industry</title>
+    <style>
+        /* Reset default styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            height: 100vh;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            background: linear-gradient(45deg, #1E2A78, #0C7DFF); /* Blue gradient */
+            padding: 20px 40px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center; /* Center the content */
+            align-items: center;
+        }
+
+        /* Navigation links styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FF5733; /* Orange hover effect */
+        }
+
+        /* Section styling */
+        section {
+            padding: 80px 20px;
+            margin: 60px auto;
+            max-width: 800px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #212121; /* Darker color for better visibility */
+            font-weight: 700; /* Bold text */
+        }
+
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #212121; /* Darker color for readability */
+            font-weight: 600; /* Bold text */
+        }
+
+        section img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.3;
+            transition: opacity 0.3s ease; /* Smooth transition for opacity */
+        }
+
+        section:hover img {
+            opacity: 0.2; /* Reduce opacity further on hover */
+        }
+
+        section:hover h2,
+        section:hover p {
+            color: #fff; /* White color on hover for contrast */
+        }
+
+        /* Button container */
+        .button-container {
+            position: relative;
+            text-align: center;
+            margin-top: 20px; /* Ensure there's space between the text and the button */
+        }
+
+        /* Button styling */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(45deg, #4CAF50, #FF9800);
+            text-decoration: none;
+            border-radius: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(45deg, #FF1493, #FF7F50);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#problem-statement">Problem Statement</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Problem Statement Section -->
+    <section id="problem-statement">
+        <img src="prblm.jpg" alt="Problem Statement">
+        <h2>Problem Statement</h2>
+        <p>
+            In the telecom industry, customer churn is a major concern. Telecom companies lose a significant number of customers 
+            each year, leading to reduced revenues. This project aims to predict customer churn using historical customer data, 
+            such as usage patterns, service features, and customer demographics. By accurately predicting which customers are likely 
+            to churn, companies can take proactive measures to retain them and increase customer loyalty.
+        </p>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology">
+        <img src="meth.jpg" alt="Methodology">
+        <h2>Methodology</h2>
+        <p>
+            We used machine learning techniques to predict customer churn. The dataset consists of historical customer information, 
+            including demographics, service usage, and payment history. After data preprocessing and feature selection, various models 
+            such as Logistic Regression, Decision Trees, Random Forest, and XGBoost were trained. The best-performing model was selected 
+            based on accuracy and precision metrics. The model is now ready to predict churn for new customers.
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <img src="fet.jpeg" alt="Features">
+        <h2>Features</h2>
+        <p>
+            - Predict whether a customer will churn based on historical data.<br>
+            - Multiple machine learning models to choose from.<br>
+            - Real-time predictions with high accuracy.<br>
+            - Easy-to-use interface for customer churn prediction.<br>
+            - Data-driven insights for better decision-making.
+        </p>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion">
+        <img src="conc.jpg" alt="Conclusion">
+        <h2>Conclusion</h2>
+        <p>
+            The project successfully demonstrates how machine learning can be used to predict customer churn in the telecom industry. 
+            By accurately identifying at-risk customers, companies can proactively retain valuable customers and improve business outcomes. 
+            The models can be scaled and deployed in real-time systems for ongoing churn prediction.
+        </p>
+        <!-- The button is now outside the image and below the text -->
+        <div class="button-container">
+            <a href="http://localhost:8501" class="button" target="_blank">Predict Now</a>
+        </div>
+    </section>
+
+</body>
+</html>
